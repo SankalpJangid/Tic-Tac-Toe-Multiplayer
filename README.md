@@ -4,5 +4,7 @@
 <ol>
   <li>First you have to run <b>"Game_server.py"</b> file on your system</li>
   <li>Now run the <b>"Game_File.py"</b> on your system<li>
-  <li><img src="https://user-images.githubusercontent.com/72187202/122671826-1df1c800-d1e6-11eb-86a9-03c3bbc79b83.jpg" alt="image"></li>
+  <li>Enter the Nickname you want to use in a Game</li>
+  <li>Now a GUI Window is Open</li>
+  
 </ol>
