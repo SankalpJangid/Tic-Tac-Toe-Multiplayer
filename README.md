@@ -6,7 +6,7 @@
   <li>Now run the <b>"Game_File.py"</b> on your system</li>
   <li>Enter the Nickname you want to use in a Game</li>
   <li>Now a GUI Window is Open</li>
-  <li><img src="https://user-images.githubusercontent.com/72187202/122672299-893c9980-d1e8-11eb-80d0-ac3a88aa82e1.png" style="width:300px;height:300px; alt="image"/></li>
+  <li><img src="https://user-images.githubusercontent.com/72187202/122672299-893c9980-d1e8-11eb-80d0-ac3a88aa82e1.png" style="width:200px;height:200px; alt="image"/></li>
   <li>If you click on <b>Single Player VS CPU</b> You Play Against the CPU</li>
   <li>If you click on a <b>Player VS Friend</b> Button a new Window is Open</li>
   <li><img src="https://user-images.githubusercontent.com/72187202/122672462-3adbca80-d1e9-11eb-9faa-8943f38b8c5b.png" alt="image"/></li>
