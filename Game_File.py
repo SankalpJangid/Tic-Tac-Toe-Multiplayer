@@ -94,6 +94,8 @@ class Game:
         game_board = Tk()
         game_board.geometry("300x300")
         game_board.title("Tic Tac Toe")
+        img = PhotoImage(file="grid.png")
+        game_board.iconphoto(False,img)
         self.player_board(game_board)
 
     #check result function
@@ -153,6 +155,8 @@ class Game:
         game_board.destroy()
         game_board = Tk()
         game_board.geometry("300x300")
+        img = PhotoImage(file="grid.png")
+        game_board.iconphoto(False,img)
         game_board.title("Tic Tac Toe Multi Player")
         label = Label(game_board,text="Enter Room Name",height=5,width=20)
         label.pack(pady=10)
@@ -167,6 +171,8 @@ class Game:
     def board(self):
         menu = Tk()
         menu.geometry("300x300")
+        img = PhotoImage(file="grid.png")
+        menu.iconphoto(False,img)
         menu.title("Tic Tac Toe")
         button1 = tk.Button(menu , text='Single Player VS CPU',command=lambda *args: self.single_player(menu),width=300,bd=10, bg='grey', fg='black', font=('helvetica', 9, 'bold'))
         button2 = tk.Button(menu , text='Player VS Friend',command=lambda *args: self.multi_player(menu),width=300,bd=10, bg='grey', fg='black', font=('helvetica', 9, 'bold'))
@@ -180,6 +186,8 @@ class Game:
         game_board.destroy()
         game_board = Tk()
         game_board.geometry("300x300")
+        img = PhotoImage(file="grid.png")
+        game_board.iconphoto(False,img)
         game_board.title("Tic Tac Toe Multi Player")
         self.multi_board(game_board,inp)
 
@@ -282,7 +290,7 @@ class Game:
         inp = inputtxt.get(1.0,"end-1c")
         client.send(f"room {str(inp)}".encode("ascii"))
         self.multi_player_board(game_board,inp)
-
+        
 def receive():
     while True:
         try:
