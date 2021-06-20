@@ -6,7 +6,8 @@ import sys
 import random
 
 client = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(("0.tcp.ngrok.io",12710))
+#you can use over another system by just forwarding your tcp port and put new host name and port name
+client.connect(("localhost",55555))
 
 nickname = input("choose your name in game : ")
 
