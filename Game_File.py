@@ -60,6 +60,12 @@ class Game:
             l10.grid(row=4,column=2)
             l11 = Button(game_board,text="RESET",command=lambda *args: self.single_player_reset(game_board))
             l11.grid(row=4,column=3)
+            
+        if(check == "tie"):
+            l10 = Label(game_board,text="   Game Tie ")
+            l10.grid(row=4,column=2)
+            l11 = Button(game_board,text="RESET",command=lambda *args: self.single_player_reset(game_board))
+            l11.grid(row=4,column=3)
 
         if count == 1:
             l10 = Label(game_board,text="Player X turn")
@@ -100,6 +106,7 @@ class Game:
 
     #check result function
     def check_result(self):
+        board1 = [x for x in board if(x != " ")]
         if(board[0] == "X" and board[1] == "X" and board[2] =="X"):
             print("X player won")
             return "won","X"  
@@ -148,6 +155,9 @@ class Game:
         if(board[2] == "O" and board[4] == "O" and board[6] == "O"):
             print("O player won")
             return "won","O"  
+        if(len(board1) == 9):
+            print("Game Tie")
+            return "tie","s"
         return "not","s"
 
     #below multiplayer code
@@ -213,6 +223,12 @@ class Game:
         if (check == "won"):
             print(name)
             l10 = Label(game_board,text=f"{name} Player Won")
+            l10.grid(row=4,column=2)
+            l11 = Button(game_board,text="RESET",command=lambda *args: self.resetGame(game_board,inp))
+            l11.grid(row=4,column=3)
+            
+        if(check == "tie"):
+            l10 = Label(game_board,text="   Game Tie ")
             l10.grid(row=4,column=2)
             l11 = Button(game_board,text="RESET",command=lambda *args: self.resetGame(game_board,inp))
             l11.grid(row=4,column=3)
